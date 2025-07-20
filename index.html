@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Ilhamdi Taufik</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+<div id="progress"></div>
+
+<header>
+  <nav class="navbar">
+    <a href="#home" class="logo">Ilhamdi Taufik</a>
+    <div class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button id="theme-toggle">🌙</button></li>
+      <li class="lets-talk-wrapper">
+  <button class="lets-talk">
+    <i class="fas fa-comment-dots"></i> Let's Talk
+  </button>
+      <div class="talk-options">
+          <a href="mailto:ilham030918@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+          <a href="https://wa.me/6282288004525" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="section home">
+  <div class="intro">
+    <h1>Hello I'm <span>Ilhamdi Taufik.</span></h1>
+    <p><span class="typing"></span></p>
+    <button class="hire" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">
+      Hire Me 🚀
+    </button>
+  </div>
+  <div class="avatar">
+    <img src="assets/avatar.png" loading="lazy" alt="Avatar">
+  </div>
+</section>
+
+<section id="about" class="section about">
+  <h2>About Me</h2>
+  <div class="about-container">
+    <div class="about-photo">
+      <img src="assets/avatar.png" loading="lazy" alt="Avatar">
+    </div>
+    <div class="about-text">
+      <h3>Hello! I'm Ilhamdi Taufik 👋</h3>
+      <p>
+        I am a passionate <strong>Data Scientist</strong> and <strong>Machine Learning Enthusiast</strong> with a love for turning data into impactful insights.
+      </p>
+      <p>
+        With experience in <strong>Python, Data Visualization, and Deep Learning</strong>, I enjoy building models that solve real-world problems.
+      </p>
+      <div class="skills">
+        <div class="skill-circle">
+          <svg viewBox="0 0 36 36">
+            <path class="circle-bg" d="M18 2.0845a15.9155 15.9155 0 1 1 0 31.831"/>
+            <path class="circle" stroke-dasharray="90,100" d="M18 2.0845a15.9155 15.9155 0 1 1 0 31.831"/>
+            <text x="18" y="20.35" class="percentage">90%</text>
+          </svg>
+          <h4>Python</h4>
+        </div>
+        <div class="skill-circle">
+          <svg viewBox="0 0 36 36">
+            <path class="circle-bg" d="M18 2.0845a15.9155 15.9155 0 1 1 0 31.831"/>
+            <path class="circle" stroke-dasharray="85,100" d="M18 2.0845a15.9155 15.9155 0 1 1 0 31.831"/>
+            <text x="18" y="20.35" class="percentage">85%</text>
+          </svg>
+          <h4>Machine Learning</h4>
+        </div>
+        <div class="skill-circle">
+          <svg viewBox="0 0 36 36">
+            <path class="circle-bg" d="M18 2.0845a15.9155 15.9155 0 1 1 0 31.831"/>
+            <path class="circle" stroke-dasharray="80,100" d="M18 2.0845a15.9155 15.9155 0 1 1 0 31.831"/>
+            <text x="18" y="20.35" class="percentage">80%</text>
+          </svg>
+          <h4>Data Visualization</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="section">
+  <h2>My Projects</h2>
+<div class="portfolio-grid">
+  <div class="card" data-project="1">
+    <img src="assets/prediksi_harga.png" alt="">
+    <h3>Prediksi Harga Rumah Indonesia</h3>
+    <p>Model machine learning regresi untuk memprediksi harga rumah berdasarkan fitur-fitur seperti jumlah kamar, luas tanah, dan lokasi. Proyek ini menggunakan dataset 70 Kota Besar Indonesia dengan visualisasi dan evaluasi performa model.</p>
+    <a href="https://prediksi-harga-rumah-ilhamditaufik.streamlit.app/" class="project-link" target="_blank">View Details</a>
+  </div>
+  <div class="card" data-project="2">
+    <img src="assets/edubot.png" alt="">
+    <h3>AI Chatbot Edukasi</h3>
+    <p>Chatbot edukasi interaktif berbasis Large Language Model yang mendukung tanya jawab, kuis, dan evaluasi jawaban pengguna secara real-time.</p>
+    <a href="https://edubot-app-n6orrjcsyhzpbo9cmtfmro.streamlit.app/" class="project-link" target="_blank">View Details</a>
+  </div>
+  <div class="card" data-project="3">
+    <img src="assets/sensor-pertambangan.png" alt="">
+    <h3>Dashboard Sensor Pertambangan</h3>
+    <p>Dashboard interaktif untuk memantau sensor alat pertambangan secara real-time, memprediksi status operasional, dan mengirim peringatan otomatis melalui email jika terdeteksi kondisi bahaya.</p>
+    <a href="https://sensor-dashboard-mining.streamlit.app/" class="project-link" target="_blank">View Details</a>
+  </div>
+  <div class="card" data-project="4">
+    <img src="assets/deteksi_dropout.png" alt="">
+    <h3>Prediksi Mahasiswa Drop Out</h3>
+    <p>Aplikasi machine learning untuk memprediksi mahasiswa yang berisiko tidak aktif atau drop out berdasarkan data nilai, kehadiran, dan aktivitas akademik.</p>
+    <a href="https://studentdropoutapp-ilhamditaufik-testing.streamlit.app/" class="project-link" target="_blank">View Details</a>
+  </div>
+</div>
+</section>
+
+
+<!-- Modal -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="modalTitle"></h3>
+    <img id="modalImage" src="" alt="Project Image" />
+    <p id="modalDescription"></p>
+  </div>
+</div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <div class="contact-container">
+  <!-- Email -->
+  <a href="mailto:ilham030918@gmail.com" class="contact-item">
+    <i class="fas fa-envelope"></i> Email
+  </a>
+  
+  <!-- WhatsApp -->
+  <a href="https://api.whatsapp.com/send?phone=6282288004525&text=Halo%20saya%20tertarik%20dengan%20portfolio%20Anda" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="contact-item">
+    <i class="fab fa-whatsapp"></i> WhatsApp
+  </a>
+  
+  <!-- Instagram -->
+  <a href="https://instagram.com/https://www.instagram.com/ilhaamdi.t/" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     class="contact-item">
+    <i class="fab fa-instagram"></i> Instagram
+  </a>
+  
+  <!-- GitHub -->
+  <a href="https://github.com/Ilhamditaufik" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="contact-item">
+    <i class="fab fa-github"></i> GitHub
+  </a>
+
+  
+  <!-- Lokasi Google Maps -->
+  <a href="https://www.google.com/maps?q=-0.947083,100.417181" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    class="contact-item">
+    <i class="fas fa-map-marker-alt"></i> Padang, Indonesia
+  </a>
+
+</div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Ilhamdi Taufik. All rights reserved.</p>
+</footer>
+
+<script>
+// Pilih semua elemen yang mau dianimasi
+  const scrollElements = document.querySelectorAll('.scroll-animation');
+
+  const elementInView = (el, offset = 100) => {
+    const elementTop = el.getBoundingClientRect().top;
+    return (
+      elementTop <= (window.innerHeight || document.documentElement.clientHeight) - offset
+    );
+  };
+
+  const displayScrollElement = (element) => {
+    element.classList.add('show');
+  };
+
+  const hideScrollElement = (element) => {
+    element.classList.remove('show');
+  };
+
+  const handleScrollAnimation = () => {
+    scrollElements.forEach((el) => {
+      if (elementInView(el, 100)) {
+        displayScrollElement(el);
+      } else {
+        hideScrollElement(el);
+      }
+    });
+  };
+
+  window.addEventListener('scroll', () => {
+    handleScrollAnimation();
+  });
+
+  // Trigger on load
+  handleScrollAnimation();
+
+const toggle = document.getElementById('theme-toggle');
+toggle.addEventListener('click', () => document.body.classList.toggle('light-theme'));
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', e => {
+    e.preventDefault();
+    document.querySelector(anchor.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => entry.target.classList.toggle('visible', entry.isIntersecting));
+}, { threshold: 0.1 });
+document.querySelectorAll('.section').forEach(section => observer.observe(section));
+
+document.getElementById('hamburger').addEventListener('click', () => {
+  document.getElementById('nav-links').classList.toggle('active');
+});
+
+document.querySelectorAll('.nav-links li a').forEach(link => {
+  link.addEventListener('click', () => document.getElementById('nav-links').classList.remove('active'));
+});
+document.querySelector('.lets-talk').addEventListener('click', () => {
+  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+});
+
+const letsTalkBtn = document.querySelector(".lets-talk");
+const talkOptions = document.querySelector(".talk-options");
+
+letsTalkBtn.addEventListener("click", (e) => {
+  e.stopPropagation(); // Biar tidak langsung hilang
+  talkOptions.style.display = talkOptions.style.display === "block" ? "none" : "block";
+});
+
+// Klik di luar -> tutup menu
+document.addEventListener("click", () => {
+  talkOptions.style.display = "none";
+});
+
+
+document.querySelectorAll('.project-link').forEach((link, index) => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const modal = document.getElementById(`modal-project${index + 1}`);
+    modal.style.display = 'block';
+    startSlider(modal);
+  });
+});
+
+document.querySelectorAll('.modal .close').forEach(span => {
+  span.addEventListener('click', () => {
+    document.getElementById(span.dataset.modal).style.display = 'none';
+  });
+});
+
+window.addEventListener('click', e => {
+  if (e.target.classList.contains('modal')) e.target.style.display = 'none';
+});
+
+function startSlider(modal) {
+  const images = modal.querySelectorAll('.slider img');
+  let current = 0;
+  images.forEach(img => img.classList.remove('active'));
+  images[0].classList.add('active');
+  if (images.length > 1) {
+    clearInterval(modal.sliderInterval);
+    modal.sliderInterval = setInterval(() => {
+      images[current].classList.remove('active');
+      current = (current + 1) % images.length;
+      images[current].classList.add('active');
+    }, 3000);
+  }
+}
+
+const roles = ["Data Scientist", "Machine Learning Engineer", "AI Enthusiast"];
+let index = 0, charIndex = 0;
+const typingSpan = document.querySelector(".typing");
+
+function type() {
+  if (charIndex < roles[index].length) {
+    typingSpan.textContent += roles[index][charIndex++];
+    setTimeout(type, 100);
+  } else setTimeout(erase, 2000);
+}
+function erase() {
+  if (charIndex > 0) {
+    typingSpan.textContent = roles[index].substring(0, --charIndex);
+    setTimeout(erase, 50);
+  } else {
+    index = (index + 1) % roles.length;
+    setTimeout(type, 500);
+  }
+}
+document.addEventListener("DOMContentLoaded", type);
+
+window.addEventListener('scroll', () => {
+  document.getElementById('progress').style.width =
+    (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100 + '%';
+
+
+// Data proyek detail
+const projectDetails = {
+  1: {
+    title: "Prediction of House Prices",
+    description: "Aplikasi machine learning interaktif untuk memprediksi harga rumah menggunakan model regresi pada dataset Boston Housing.",
+    image: "assets/prediksi-harga.png",
+    link: "https://prediksi-harga-rumah-ilhamditaufik.streamlit.app/"
+  },
+  2: {
+    title: "AI Chatbot Edukasi",
+    description: "Chatbot edukasi berbasis Large Language Model yang mendukung percakapan interaktif, kuis, dan evaluasi otomatis.",
+    image: "assets/edubot.png",
+    link: "https://edubot-app-n6orrjcsyhzpbo9cmtfmro.streamlit.app/"
+  },
+  3: {
+    title: "Dashboard Sensor Pertambangan",
+    description: "Dashboard interaktif untuk memantau sensor alat pertambangan secara real-time, memprediksi status operasional, dan mengirim peringatan otomatis melalui email jika terdeteksi kondisi bahaya.",
+    image: "assets/sensor-pertambangan.png",
+    link: "https://sensor-dashboard-mining.streamlit.app/"
+  },
+  4: {
+    title: "Prediksi Mahasiswa Drop Out",
+    description: "Aplikasi machine learning untuk memprediksi mahasiswa yang berisiko tidak aktif atau drop out berdasarkan data nilai, kehadiran, dan aktivitas akademik.",
+    image: "assets/deteksi_dropout.png",
+    link: "https://studentdropoutapp-ilhamditaufik-testing.streamlit.app/"
+  }
+};
+
+
+
+// Modal elements
+const modal = document.getElementById("projectModal");
+const modalTitle = document.getElementById("modalTitle");
+const modalDescription = document.getElementById("modalDescription");
+const closeBtn = document.querySelector(".close");
+
+
+
+// Close modal
+closeBtn.onclick = () => {
+  modal.style.display = "none";
+};
+window.onclick = e => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+};
+
+document.querySelectorAll('.project-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const card = this.closest('.card');
+    const projectId = card.getAttribute('data-project');
+    const project = projectDetails[projectId];
+
+    if (project && project.link) {
+      window.open(project.link, '_blank'); // buka tab baru
+    }
+  });
+});
+
+
+});
+</script>
+</body>
+</html>
